@@ -62,4 +62,9 @@ char *wally_strdup(const char *str);
 #define BYTES_INVALID(p, len) (!BYTES_VALID(p, len))
 #define BYTES_INVALID_N(p, len, siz) ((p != NULL) != (len == siz))
 
+/* TODO: Expose these */
+int wally_hex_n_verify(const char *hex, size_t hex_len);
+int wally_hex_n_to_bytes(const char *hex, size_t hex_len,
+                         unsigned char *bytes_out, size_t len, size_t *written);
+
 #endif /* LIBWALLY_INTERNAL_H */

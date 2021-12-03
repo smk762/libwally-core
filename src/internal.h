@@ -66,5 +66,8 @@ char *wally_strdup(const char *str);
 int wally_hex_n_verify(const char *hex, size_t hex_len);
 int wally_hex_n_to_bytes(const char *hex, size_t hex_len,
                          unsigned char *bytes_out, size_t len, size_t *written);
+int wally_base58_n_get_length(const char *str_in, size_t str_len, size_t *written);
+int wally_base58_n_to_bytes(const char *str_in, size_t str_len, uint32_t flags,
+                            unsigned char *bytes_out, size_t len, size_t *written);
 
 #endif /* LIBWALLY_INTERNAL_H */

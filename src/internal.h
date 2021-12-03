@@ -69,5 +69,8 @@ int wally_hex_n_to_bytes(const char *hex, size_t hex_len,
 int wally_base58_n_get_length(const char *str_in, size_t str_len, size_t *written);
 int wally_base58_n_to_bytes(const char *str_in, size_t str_len, uint32_t flags,
                             unsigned char *bytes_out, size_t len, size_t *written);
+struct ext_key;
+int bip32_key_from_base58_n(const char *base58, size_t base58_len, struct ext_key *output);
+int bip32_key_from_base58_n_alloc(const char *base58, size_t base58_len, struct ext_key **output);
 
 #endif /* LIBWALLY_INTERNAL_H */

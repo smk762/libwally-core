@@ -72,5 +72,9 @@ int wally_base58_n_to_bytes(const char *str_in, size_t str_len, uint32_t flags,
 struct ext_key;
 int bip32_key_from_base58_n(const char *base58, size_t base58_len, struct ext_key *output);
 int bip32_key_from_base58_n_alloc(const char *base58, size_t base58_len, struct ext_key **output);
+int wally_addr_n_segwit_to_bytes(const char *addr, size_t addr_len,
+                                 const char *addr_family, size_t addr_family_len,
+                                 uint32_t flags,
+                                 unsigned char *bytes_out, size_t len, size_t *written);
 
 #endif /* LIBWALLY_INTERNAL_H */

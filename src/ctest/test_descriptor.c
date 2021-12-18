@@ -803,6 +803,10 @@ static const struct descriptor_err_test {
         "wpkh(02f9308a019258c31049344f85f89d5229b531c845836f99b08601f113bce036f9)#8rap84p2",
         WALLY_NETWORK_BITCOIN_MAINNET
     },{
+        "descriptor errchk - upper case hardened indicator",
+        "pkh(xprvA2YKGLieCs6cWCiczALiH1jzk3VCCS5M1pGQfWPkamCdR9UpBgE2Gb8AKAyVjKHkz8v37avcfRjdcnP19dVAmZrvZQfvTcXXSAiFNQ6tTtU/1H/2)",
+        WALLY_NETWORK_BITCOIN_MAINNET
+    },{
         "descriptor errchk - privkey - unmatch network1",
         "wpkh(cSMSHUGbEiZQUXVw9zA33yT3m8fgC27rn2XEGZJupwCpsRS3rAYa)",
         WALLY_NETWORK_BITCOIN_MAINNET

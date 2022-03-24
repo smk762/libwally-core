@@ -1,4 +1,4 @@
-# libwally-core
+# libwally-core 
 
 Wally is a cross-platform, cross-language collection of useful primitives
 for cryptocurrency wallets.

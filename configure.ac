@@ -76,9 +76,7 @@ fi
 case $AR in
 *libtool)
     ARFLAGS="-static -o"
-    AR_FLAGS="-static -o"
     AC_SUBST([ARFLAGS])
-    AC_SUBST([AR_FLAGS])
     ;;
 esac
 
@@ -455,7 +453,6 @@ export CC
 export CFLAGS
 export AR
 export ARFLAGS
-export AR_FLAGS
 export LD
 export LDFLAGS
 ac_configure_args="${ac_configure_args} --disable-shared --with-pic --with-bignum=no --enable-experimental --enable-module-ecdh --enable-module-recovery --enable-module-ecdsa-s2c --enable-module-rangeproof --enable-module-surjectionproof --enable-module-whitelist --enable-module-generator ${secp256k1_test_opt} --enable-openssl-tests=no --enable-exhaustive-tests=no --enable-benchmark=no --disable-dependency-tracking ${secp_asm}"
